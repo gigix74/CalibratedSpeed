@@ -12,7 +12,7 @@
 #define LeftMinSpeed 24  //determined experimentally
 #define RightMinSpeed 24 //determined experimentally
 #define LeftMaxSpeed 246 //determined experimentally
-#define RightMaxSpeed 24 //determined experimentally
+#define RightMaxSpeed 255 //determined experimentally
 
 // creates two objects for calibrating left and right motors speed
 CalibratedSpeed csl = CalibratedSpeed(LeftMinSpeed, LeftMaxSpeed);
