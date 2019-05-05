@@ -4,17 +4,16 @@
 
 // next values are determined experimentally and is not part of this sketch
 // min speed is the speed at witch your motors start spinning. 
-// Adjust so the car goes straight (and steady) ahead at minimum speed in both direction.
+// Adjust so the car goes straight ahead (and steady) at minimum speed in both direction.
 // max speed is the maximum speed supported by your driver (usually 255 or the maximum you choose). 
 // Lower the max left value if your car goes right and right value if the car goes left,
 // until your car goes straight at maximum speed.
+#define LeftMinSpeed 24
+#define RightMinSpeed 24
+#define LeftMaxSpeed 246
+#define RightMaxSpeed 255
 
-#define LeftMinSpeed 24  //determined experimentally
-#define RightMinSpeed 24 //determined experimentally
-#define LeftMaxSpeed 246 //determined experimentally
-#define RightMaxSpeed 255 //determined experimentally
-
-// creates two objects for calibrating left and right motors speed
+// creates two objects for calibrating left and right motor speed
 CalibratedSpeed csl = CalibratedSpeed(LeftMinSpeed, LeftMaxSpeed);
 CalibratedSpeed csr = CalibratedSpeed(RightMinSpeed, RightMaxSpeed);
 

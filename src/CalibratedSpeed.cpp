@@ -30,6 +30,14 @@ CalibratedSpeed::CalibratedSpeed(int outMin, int outMax)
     _outMax = outMax;
 }
 
+CalibratedSpeed::CalibratedSpeed(int inMin, int inMax, int outMin, int outMax)
+{
+    _inMin = inMin;
+    _inMax = inMax;
+    _outMin = outMin;
+    _outMax = outMax;
+}
+
 CalibratedSpeed::~CalibratedSpeed(){}
 
 int CalibratedSpeed::getSpeed(int rowSpeed)

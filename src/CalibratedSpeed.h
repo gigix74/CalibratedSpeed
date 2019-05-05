@@ -27,6 +27,7 @@ class CalibratedSpeed
 {
     public:
         CalibratedSpeed(int outMin, int outMax);
+        CalibratedSpeed(int inMin, int inMax, int outMin, int outMax);
         ~CalibratedSpeed();
         int getSpeed(int rowSpeed);
         void calibrate(int inMin, int inMax, int outMin, int outMax);
