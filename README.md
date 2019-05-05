@@ -57,10 +57,10 @@ The getSpeed method accepts and returs negative values to acomodate all kind of 
 ## Advanced usage
 If the input domain differ from the standard 0..255, the overridden constructer can be used:
 ```c++
-#define InMin 1023
-#define InMax 1
-#define OutMin 24
-#define Out max 246
+#define IN_MIN 1023
+#define IN_MAX 1
+#define OUT_MIN 24
+#define OUT_MAX 246
 
 // creates calibrating object
 CalibratedSpeed cs = CalibratedSpeed(IN_MIN, IN_MAX, OUT_MIN, OUT_MAX);
